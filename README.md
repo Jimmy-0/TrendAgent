@@ -22,3 +22,6 @@ pytest -q
 - **SpecializedAgentA** and **SpecializedAgentB** – handle requests for specific MCP servers (A and B respectively). They call their stub servers (`MCPStubServerA` and `MCPStubServerB`) to attempt a solution.
 - **AgentSquad** – a cooperative agent used when specialized agents fail or when no specialized agent is available. It uses `MCPStubServerC` to enrich partial data and produce a final answer.
 - **mcp_stubs** – contains the stub server classes that simulate MCP behavior for testing and development.
+
+## Environment Variables
+The repository includes `.env.example` with sample configuration values. If you extend the application to use environment variables, copy this file to `.env` and adjust the values for your environment.
