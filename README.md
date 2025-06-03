@@ -4,8 +4,16 @@
 TrendAgent demonstrates a multi-agent setup where a `CentralAgent` coordinates work across specialized agents and an escalation `AgentSquad`. It relies on stub MCP servers to emulate external systems for testing.
 
 ## Installation
-1. Create a virtual environment with Python 3.10 or later.
-2. Install dependencies:
+1. Install `uv` globally for faster dependency management:
+   ```bash
+   pip install uv
+   ```
+2. Create a virtual environment with Python 3.10 or later.
+3. Restore the project dependencies:
+   ```bash
+   make restore
+   ```
+4. *(Optional)* For compatibility with older workflows you can still run:
    ```bash
    pip install -r requirements.txt
    ```
